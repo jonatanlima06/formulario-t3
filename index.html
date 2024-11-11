@@ -26,9 +26,42 @@
                     <label for="email">E-mail: </label>
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail" />
                 </div>
-
-
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" />
+                </div>
             </fieldset>
+            <fieldset>
+                <label for="estados">Estados: </label>
+                <select name="estados" id="estados">
+                    <option value="SE">SE</option>
+                    <option value="PB">PB</option>
+                    <option value="BA">BA</option>
+                    <option value="PE">PE</option>
+                </select>
+
+                <label for="nascimento">Data de Nascimento: </label>
+                <input type="date" name="nascimento" id="nascimento"/>
+
+                <label for="foto">Selecione uma foto</label>
+                <input type="file" name="foto" id="foto" accept="image/jpeg, image/png. doc/pdf"/>
+            </fieldset>
+            <fieldset>
+                <legend>Você é um robô?</legend>
+                <img src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png"
+                    width="100" alt="Figura de um robô vede" />
+            <div>
+                <input type="radio" name="robo" id="robo" id="sim"/>
+                <label for="sim">Sim, sou robô</label>
+                <input type="radio" name="robo" id="robo" id="não"/>
+                <label for="não">Não sou robô</label>
+                <input type="radio" name="robo" id="robo" id="talvez"/>
+                <label for="talvez">Talvez eu seja um robô</label>
+            </div>
+                <input type="checkbox" name="acordo" id="acordo"/>
+                <label for="acordo">Declaro que sou um robô e vim para dominar o mundo</label>
+            </fieldset>
+            <input type="submit" value="Enviar"/>
         </form>
     </main>
 </body>
